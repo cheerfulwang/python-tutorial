@@ -20,9 +20,9 @@ s = "hello world"
 print(s.replace('world', 'Mars'))  # hello Mars
 print(s)  # hello world
 
-# 如果想改变字符串的值，可以用重新赋值的方法：
+# 不可变数据类型的对象只能通过重新赋值的方法去改变
 s = s.replace('world', 'YunYun')
 print(s)  # hello YunYun
 
 # 可变数据类型: list, dictionary, set, numpy array, user defined objects
-# 不可变数据类型: integer, float, long, complex, string, tuple, frozenset
+# 不可变数据类型: integer, float, long, complex, string, tuple, frozenset，主要是后面的这三个伪叶节点数据
