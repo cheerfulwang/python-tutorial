@@ -18,14 +18,14 @@ class Clothes(object):
         return self.price * 0.8
 
 
-# 这里 discount_price 就是一个只读不写的属性了（注意是属性不是方法）,
+# 这里 discount_price 就是一个只读不写的属性了（注意是属性不是方法）,严格意义上他还不是一个静态的属性，只是很像而已
 # 而price是可读写的属性：
 my_clothes = Clothes(100)
 print(my_clothes.discount_price)  # 80.0
 
 # 可以修改price属性来改变discount_price：
 my_clothes.price = 200
-print(my_clothes.discount_price)  # 160.0
+print(my_clothes.discount_price)  # 160.0，也改变了！
 
 
 # my_clothes.discount_price()会报错，因为 my_clothes.discount_price 是属性，不是方法；
